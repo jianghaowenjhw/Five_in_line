@@ -1,0 +1,28 @@
+直接使用git bash
+
+git clone <网址> # 克隆仓库到本地, 不需要git init了
+git init # 对某个本地项目配置local_git
+git remote add origin <网址> # 配置远程仓库
+
+git branch # 查看分支
+git checkout -b <some_branch> # 创建分支
+git checkout -b new-feature dev # 从某个分支上创建分支
+git switch -c <some_branch> # 创建分支
+git branch <some_branch> # 创建分支
+git branch -D <some_branch> # 删除分支, 注意不能删除正在活动的分支
+git switch <some_branch> # 切换到这个分支
+
+git status # 显示信息
+git diff # 显示更改信息
+
+git add <changed_file> # 添加某个更改文件到暂存区
+git add . # 添加所有更改文件到暂存区
+
+git commit -m "备注" # 提交文件到本地仓库
+
+git push origin <some_branch> # 提交到远程仓库的分支
+
+git pull origin <some_branch> # 拉取远程仓库中这个分支的修改
+git fetch origin # 拉取远程仓库的修改
+
+git rebase <some_branch> # 在这个some_branch分支的基础上, 添加自己当前的修改
