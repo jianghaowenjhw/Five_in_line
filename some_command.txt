@@ -26,3 +26,5 @@ git pull origin <some_branch> # 拉取远程仓库中这个分支的修改
 git fetch origin # 拉取远程仓库的修改
 
 git rebase <some_branch> # 在这个some_branch分支的基础上, 添加自己当前的修改
+
+流程: 新建本地分支, 在这个分支上修改 . 然后切换到main, 拉取远程仓库的修改, 然后切换到新分支, rebase到main上, 再把新分支一路同步到远程仓库上, 发起请求. 成功后拉取main, 删除本地的新分支. 
